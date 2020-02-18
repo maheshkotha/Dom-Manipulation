@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dom Manipulation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Dom Manipulation Task</h1>
+    <button id="new_issue_btn" class="issue-btn">NewIssue+</button>
+    <div class="container">
+
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="wrapper">
+            <span class="closebtn" id="closebtn">X</span>
+            <h2>New Issue</h2>
+            <form class='form'>
+                <div>
+                    <label for='issue'>Issue Name</label>
+                    <input type="text" name="issue" id="issue">
+                </div>
+                <div>
+                    <label>Sevarity</label>
+                    <select name="sevarity" id="sevarity">
+                        <option>Select Sevarity</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Description</label>
+                    <textarea rows="5" cols="40" id="desc"></textarea>
+                </div>
+                <div class="submit">
+                    <input type="submit" id="submit" value="submit">
+                </div>
+                <div class="tostmsg" id="tostmsg">
+                    <span>Fill all fields</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
